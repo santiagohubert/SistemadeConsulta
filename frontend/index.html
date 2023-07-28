@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Consulta</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bienvenido a nuestro sistema de consultas</h1>
+    <div id="centeredContent">
+      <div id="btnRealizarConsulta">Si desea realizar una consulta de orden
+        <p><button class="consulta-btn" onclick="irAFormulario()">click aquí</button></p>
+      </div>
+    </div>
+    <div>
+      <img src="https://cessi.org.ar/wp-content/uploads/2022/03/prosys.png" alt="Prosys Logo" class="logo">
+    </div>
+
+    <div id="centeredContent">
+      <div id="formulario" style="display: none;" class="formulario">
+        <div>
+        <label>Buscar Orden</label>
+        <input type="text" id="numeroOrden" placeholder="Ingrese el número de orden" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="6" required>
+      </div>
+
+        <button onclick="buscarOrden()">Buscar</button>
+        <button onclick="limpiarFormulario()">Limpiar</button>
+
+        <div id="error" class="mensaje-error"></div>
+        <div id="errorBusqueda" class="mensaje-error" style="display: none;">
+          Recuerde ingresar un número de orden existente
+        </div>
+        <div id="resultado" class="resultado"></div>
+
+      </div>
+      <div class="fin-form">
+        <h3> Tus soluciones, en un solo lugar. </h3>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

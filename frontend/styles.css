@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  #centeredContent {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+ .consulta-btn {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+ }
+ 
+ .consulta-btn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+ }
+ 
+ @keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
+
+  .logo {
+    width: 150px; 
+    margin-top: 20px; 
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .fin-form {
+    text-align: center; 
+    font-family: "Arial", sans-serif; 
+    font-size: 20px; 
+    color: #333; 
+    margin-top: 20px; 
+  }
+
+  .formulario {
+    background-color: #152844;
+    padding: 25px 50px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .formulario label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+
+  .formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+  }
+  
+  .formulario input:focus {
+    border-color: #f0f0f0; 
+    outline: none; 
+  }
+  
+  .formulario button {
+    background-color:white;
+    color: #152844;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+  }
+  
+  .mensaje-error {
+    color: #ff0000; 
+    font-weight: bold;
+    padding-top: inherit;
+  }
+  
+  .footer {
+    margin-top: auto;
+    font-size: small;
+  }
+
+  
